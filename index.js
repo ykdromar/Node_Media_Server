@@ -1,6 +1,6 @@
 const NodeMediaServer = require("node-media-server");
 
-const config = {
+const configNodeMediaServer = {
   rtmp: {
     port: 1935,
     chunk_size: 60000,
@@ -14,6 +14,6 @@ const config = {
   },
 };
 
-var nms = new NodeMediaServer(config);
-console.log("Starting npm");
+var nms = new NodeMediaServer(configNodeMediaServer);
+console.log("Starting nms");
 nms.run();
